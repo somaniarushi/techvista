@@ -1,0 +1,56 @@
+
+
+
+/* Index.html */
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background: black;
+}
+
+.logo
+{
+    height: 160px;
+    width: 130px;
+}
+.right
+{
+    float: right;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    background-color: white;
+    padding: 30px;
+ 
+}
+
+.right input
+{
+    margin: auto;
+    position: relative;
+    display: inline;
+    margin: 30px;
+    height: 15px;
+    font-size: 20px;
+    border: 0px;
+    border-bottom: 1px solid red ;
+    padding:20px;   
+    outline: 0;
+}
+.right input:focus
+{
+    border: 0px;
+    outline: 0;
+    border-bottom: 2px solid red ;
+}
+.right h1
+{
+    text-align: center;
+    outline: 0px;
+    background: red;
+    
+}

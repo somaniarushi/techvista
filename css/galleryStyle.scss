@@ -1,0 +1,33 @@
+.element
+{
+    display: inline-block;
+    height: 400px;
+    width: 500px;
+    margin: 10px;
+}
+.front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    height: 400px;
+    width: 500px;
+    backface-visibility: hidden;
+    transition: transform 0.8s linear;
+    background: red;
+}
+.back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    height: 80vh;
+    width: 80vw;
+    backface-visibility: hidden;
+    transition: transform 0.8s linear;
+    background: yellow;
+}
+.caption
+{
+    color: black;
+    font-size: 120%;
+    
+}

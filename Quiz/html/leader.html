@@ -1,0 +1,36 @@
+<div class="cont home">
+<div data-ng-include="'../html/leftNav.html'"></div>
+    <div class="cards" style="text-align:left">
+        
+       
+       <table style="width:100%">
+           <tr>
+           
+                <td>Position</td>
+                <td>Name</td>
+                <td>School</td>
+                <td>Question No</td>
+               
+           </tr>
+           <tr></tr>
+         
+  <tr ng-repeat="user in leaderBoardArray | orderBy:'-questionNumber'" >
+    
+      
+    <td>{{$index + 1}}</td>
+    <td>{{ user.Name }}</td>
+    <td>{{ user.parent }}</td>
+    <td>{{ user.questionNumber }}</td>		
+    
+  </tr>
+  
+</table>
+        
+        </div>
+        
+        
+        
+    </div>
+
+</div>
+    

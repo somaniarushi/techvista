@@ -1,0 +1,60 @@
+
+<!--Main Display-->
+<div class="memberData" ng-if="rightPane">
+    
+    <div class="closeBtn" ng-click="showData()"></div>
+    <div class="memberData-right">
+        <img id="phoneMemberPic" ng-src="{{ currentPic }}"/>
+        <h1 id="memberName">{{ currentName }}</h1>
+        <br>
+        <h2>{{ currentPost }}</h2>
+        <br>
+        <p class="data">{{ currentData }}</p>
+          
+    </div>
+    <div class="memberData-left">
+        <img ng-src="{{ currentPic }}"/>
+    
+    </div>
+        
+    
+    </div>	
+
+<div id="grid" class="grid cs-style-3 teamWrapper">
+    <div ng-include="'../partials/animations/loading.html'" ng-if="!show"></div>
+    
+    <div class="memberCont" ng-repeat-start="member in members" ng-if="show">
+                <li>
+                    
+					<figure>
+						<img ng-src="{{ member.pic }}" imageonload>
+                        <div class="phoneTeamData">
+                            <p class="phoneTeam"></p>
+                        </div>
+						<figcaption>
+							<h3>{{ member.name }}</h3>
+							<p ng-bind-html="member.post"></p>
+						</figcaption>
+                        <div class="openBtn">
+                            <ng-include src="'../partials/arrow.html'" ng-click="showData(member)"></ng-include>
+                        </div>
+					</figure>
+				</li>
+        
+    </div><br ng-if="member.break=='yes'" ng-repeat-end/>
+    
+</div>
+	
+
+
+
+          
+
+
+
+
+
+
+
+
+

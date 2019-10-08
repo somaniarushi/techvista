@@ -1,0 +1,72 @@
+<ng-include ng-if="showLoader" src="'../partials/animations/loading.html'"></ng-include>
+
+<div class="cont quizHome home" >
+     <div class="alertCont" ng-if='alert!=""' style="background-color:{{ errorColor }}">
+    
+        {{ alert }}
+    
+    </div>
+    <div class="alertCont sucessMsg">
+    
+        Password Changed Sucessfully
+    
+    </div>
+    <div class="alertCont invalidPass">
+    
+        Password entered is incorrect.
+    
+    </div>
+   
+        <div class="settingWrap">
+    <div class="settingsHeader"><h1>Settings</h1></div>
+    <div class="changeWrap" style="position:relative;top:-27px;">
+        <h3 class="settingHeading">Change Profile Picture</h3>
+        
+       <br><br>
+        <input type="file" placeholder="Upload" id="img" style="position:relative;left:50px;"><br><br><br>
+        <div class="btn" ng-click="changePic()" style="margin:40px;">Change Profile Picture</div>
+    </div>
+    <div class="changeWrap">
+        <h3 class="settingHeading">Change Name</h3>
+        <div class="changeInnerWrap">
+            <p>Current Name: {{ currentUsername }}</p>
+            <br><br>
+            <div class="group">      
+              <input type="text" ng-model="changeToUsername">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>New Name</label>
+            </div>
+            <br>
+            <div class="btn" ng-click="changeUsername()">Update</div>
+        </div>
+    </div>
+    <div class="changeWrap">
+       
+        <h3 class="settingHeading">Change Pass</h3>
+        <div class="changeInnerWrap">
+        <div class="group">      
+              <input type="password" ng-model="oldPass">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Old Password</label>
+        </div>
+            <br><br>
+        <div class="group">      
+              <input type="password" ng-model="newPass">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>New Password</label>
+        </div>
+       
+        <div class="btn" ng-click="changePass()" ng-if="changePass">Update</div>
+        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="!changePass"></ng-include>
+        </div>
+    </div> 
+    </div>
+        
+        </div>
+    </div>                
+</div>
+
+  

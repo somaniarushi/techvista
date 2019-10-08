@@ -1,0 +1,77 @@
+            <div ng-app="mainApp" ng-controller="dashboard">
+
+                    <h1>Hi {{ username }}. You have sucessfully logged in. Happy?</h1>
+                <br>
+                <br>
+                <br>
+                <h1>{{ question }}</h1>
+
+                   
+            
+            </div>
+
+        
+        
+        
+  
+        "answers" : [ 
+        "", 
+        "circumference", 
+        "charlie", 
+        "tinkerbell", 
+        "australia", 
+        "china", 
+        "portugal", 
+        "lochness", 
+        "pcplum", 
+        "sherlockholmes", 
+        "bamboo", 
+        "spain", 
+        "ireland" ],
+
+    "hintUrl" : [ 
+    "", 
+    "pie it twice", 
+    "chocolate", 
+    "bell", 
+    "aus", 
+    "great wall", 
+    "ports", 
+    "ness", 
+    "pc", 
+    "Its Holmes", 
+    "bam", 
+    "spa", 
+    "land" ],
+    
+    "questions" : [ 
+    "", 
+    "What is the distance around a circle called?", 
+    "What is the name of the boy that visits the chocolate factory owned by Willy Wonka?", 
+    " What is the name of the fairy in Peter Pan?", 
+    " Which country is home to the kangaroo?", 
+    "Which country is home to the Giant Panda?", 
+    "Which country shares the same peninsula with Spain?", 
+    " Where in Scotland is there supposedly a lake monster called Nessie?", 
+    " What is the name of the policeman in the pre-school childrens' television series Balamory?", 
+    " Which fictional detective lived at 221b Baker Street?", 
+    "What food do Giant Pandas normally eat?", 
+    " Which country sent an Armada to attack Britain in 1588?", 
+    "Saint Patrick is the Patron Saint of which country?" ]
+  
+
+
+
+        $rootScope.displayName = data.Name;
+        $rootScope.questionNo = data.questionNumber;
+        
+        ref.on("value", function(snapshot){
+            $rootScope.questions = snapshot.child("questions").val();
+            $rootScope.answers = snapshot.child("answers").val();   
+            
+            
+            $scope.currentQuestion = $rootScope.questions;
+            console.log($scope.currentQuestion)
+            $scope.currentAns = $rootScope.answers[$rootScope.questionNo];    
+            $(".home").fadeIn(0);
+        });

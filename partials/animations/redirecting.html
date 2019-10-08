@@ -1,0 +1,20 @@
+<!-- 6 -->
+
+
+<p class="msg">{{ visitMsg }}</p>
+<div ng-if="failed" class="againButton" ng-click="trySearchAgain()">Try Again</div>
+<style>
+
+.msg
+    {
+        color: white;
+    }
+.againButton
+    {
+        padding: 20px;
+        box-shadow: 0.8px 0.8px 2px black;
+        color: white;
+        cursor: pointer;
+        width: 100px;
+    }
+</style>

@@ -1,0 +1,16 @@
+<div id="grid" class="grid cs-style-7">
+    <div ng-include="'../partials/animations/loading.html'" ng-if="!show"></div>
+    
+    <div class="galleryCont" ng-repeat-start="pic in pics" ng-if="show">
+                <li>
+					<figure>
+						<img ng-src="{{ pic.src }}" imageonload>
+						<figcaption>
+							<h3>{{ pic.caption }}</h3>
+							<p>{{ pic.para }}</p>
+                        </figcaption>                        
+					</figure>
+				</li>
+    </div>
+</div>
+	

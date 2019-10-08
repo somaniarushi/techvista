@@ -1,0 +1,20 @@
+<div class="cont home">
+<div data-ng-include="'../html/leftNav.html'"></div>
+    <div class="cards" style="text-align:left">
+        
+        <h3>Change Display Name - </h3>
+        <p>Current Username - </p>
+        <p>{{ currentUsername }}</p>
+        <input class="input" placeholder="New Username" ng-model="changeToUsername">
+        <div class="btn" ng-click="changeUsername()">Update</div>
+        <p>{{ changedNameMsg }}</p>
+        <h3>Change Pass - </h3>
+        
+        
+        <input class="input" placeholder="Old Password" type="password" ng-model="oldPass">
+        <input class="input" placeholder="New Password" type="password" ng-model="newPass">
+        <div class="btn" ng-click="changePass()">Update</div>
+        <p>{{ changedPassMsg }}</p>
+        
+    </div>
+</div>

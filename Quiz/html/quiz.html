@@ -1,0 +1,40 @@
+<div class="cont home">
+<div data-ng-include="'../html/leftNav.html'"></div>
+    <div class="previousOverlay hiddenOverlay">
+        
+    <div class=" questionWrap cards ">
+    
+        
+    <div class="question hiddenOverlay"  ng-repeat="question in questionArray | orderBy:'questionNo'" ng-class="question.questionNo">
+        
+        <p><strong>Q{{ question.questionNo }}&emsp;</strong>{{ question.Q }}</p>
+        <br>
+       
+        <br>
+         <input id="username"  ng-model="randomPrevAns" style="border-bottom: 1.5px solid {{ errorColor }};"><br/>
+        <div class="btn" ng-click="submitAnsButNoUpdate(question.A, randomPrevAns, question.questionNo)">Submit</div>
+        <div class="btn" ng-click="hide(question.questionNo)">Hide</div>
+        <br>
+        {{ wrongMsg }}
+        
+        </div>
+    </div>
+        </div>
+    <div class="hint3">{{ hint3 }}</div>
+    <div class="cards">
+    
+        <p><strong>Q{{ questionNo }}&emsp;</strong>{{ currentQuestion }}</p>
+        <br>
+       
+        <br>
+         <input id="username"  ng-model="ans" style="border-bottom: 1.5px solid {{ errorColor }};"><br/>
+        <div class="btn" ng-click="submitAns()">Submit</div>
+        <br>
+        {{ wrongMsg }}
+            <div class="questionButton" ng-repeat="question in questionArray | orderBy:'questionNo'" ng-click="questionSelect(question.questionNo)">{{ question.questionNo }}</div>
+        
+    </div>
+    
+
+    </div>
+    

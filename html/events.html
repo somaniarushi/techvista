@@ -1,0 +1,78 @@
+
+<div ng-if="!showEvents" class="loading" ng-include="'../partials/animations/loading.html'"></div>
+
+<ul class="grid cs-style-4" ng-if="showEvents">
+    <li class="eventCont" id="eventCont" ng-repeat="event in events">
+        <figure>
+            <div class="img" ng-click="triggerEventDetails(event)"><img ng-src="{{ event.img }}" id="{{ event.shift }}"/></div>
+            <figcaption>
+                <div class="label">
+                    <h3 class="heading">{{ event.eventName }}</h3>
+                    <p class="heading">{{ event.realEventName }}</p>
+                </div>
+                <div class="openBtn" ng-click="triggerEventDetails(event)">
+                    <ng-include src="'../partials/arrow.html'"></ng-include>
+                </div>
+            </figcaption>
+        </figure>
+    </li>
+</ul>
+
+<div class="eventInfoTab" ID="" ng-if="showEventDetails">
+    <div class="closeBtn" ng-click="triggerEventDetails()"></div>
+    
+    <div class="eventHeading" id="eventHeadingCont" style="background-color:{{ currentEvent.color2 }}"><h1 id="eventHeading">{{ currentEvent.eventName }}</h1><h2 class="subHeading" style="background-color:{{ currentEvent.color1 }}">{{ currentEvent.realEventName }}</h2></div>
+    <img class="eventImgMobile" ng-src="{{ currentEvent.img  }}">
+    <!--For Phone-->
+    
+    
+     <div id="coordiantorPhone" style="background-color:{{ currentEvent.color1 }}">
+         <div class="eventHeading" id="phone-eventHeadingCont" style="background-color:{{ currentEvent.color2 }}"><h1 id="eventHeading">{{ currentEvent.eventName }}</h1><h2 class="subHeading" style="background-color:{{ currentEvent.color1 }}">{{ currentEvent.realEventName }}</h2></div>
+    
+         <div class="headContact">
+        <p>Event Co-ordinator : {{ currentEvent.head }}</p>
+        
+            <p>Phone : +91 {{ currentEvent.contact.phone }}</p>
+            <p>Email : {{ currentEvent.contact.mail }}</p>
+             <a  href="{{ currentEvent.contact.fb }}"><ng-include src="'../partials/buttons/fbIco.html'" id="fbLink"></ng-include></a>
+            <a  href="mailto:{{ currentEvent.contact.mail }}"><ng-include src="'../partials/buttons/gmailIco.html'" id="fbLink"></ng-include></a>
+             </div>
+            <div class="phone-event-rules" id="phone-event-rules">
+        
+            <ul ng-repeat="point in currentEvent.data">
+                <li ng-bind-html="point"></li>
+            </ul>
+            </div>        
+        
+    </div>
+    <div class="event-rules" id="event-rules">
+        
+         <ul ng-repeat="point in currentEvent.data">
+            <li ng-bind-html="point"></li>
+        </ul>
+    </div>
+   
+    <div class="event-leftPane" id="event-leftPane" style="background-color:{{ currentEvent.color1 }}">
+        <img class="eventImg" ng-src="{{ currentEvent.img  }}">
+        
+        <!--<p class="event-aboutPara" ng-bind-html="currentEvent.about"></p>-->
+        <div class="coordiantor">
+        <p>Event Co-ordinator :<br> {{ currentEvent.head }}</p>
+        
+            <p>Phone :<br> +91 {{ currentEvent.contact.phone }}</p>
+            <p>Email :<br> {{ currentEvent.contact.mail }}</p>
+            <a  href="{{ currentEvent.contact.fb }}"><ng-include src="'../partials/buttons/fbIco.html'" id="fbLink"></ng-include></a>
+            <a href="mailto:{{ currentEvent.contact.mail }}"><ng-include src="'../partials/buttons/gmailIco.html'" id="fbLink"></ng-include></a>
+        
+        </div>
+    </div>
+</div>
+<script>
+
+    $( window ).unload(function() {
+    $("body").css("overflow-y","scroll");
+});
+
+</script>
+
+ 

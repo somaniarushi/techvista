@@ -1,0 +1,214 @@
+
+@font-face {
+    
+    src: url(../font/SansationLight.woff);
+    font-family: sansation;
+}
+
+.input
+{
+    border-bottom: 1px solid black;
+}
+header
+{
+    background-color: #0d47a1;
+    height: 15vh;
+    padding: 10px;
+    box-shadow: 0.6px 0.6px 5px black;
+    z-index: 2;
+}
+
+/*-----------------Left Nav-----------------------*/
+
+                .nav
+                {
+                    position: fixed;
+                    left: -415px;
+                    padding: 30px;
+                    margin: 5px;
+                    width: 400px;
+                    cursor: pointer;
+                    color: white;
+                    z-index: 500;
+                    background-color: rgba(28,28,28,0.8);
+                }
+              
+                #one
+                {
+                    
+                    top: 150px;
+                    background-image: url(../images/homeIco.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    
+                }
+                
+                #two
+                {
+                    top: 210px;
+                     background-image: url(../images/homeIco.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                   
+                }
+                
+                #three
+                {
+                    top: 270px;
+                     background-image: url(../images/homeIco.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                   
+                    
+                }
+                
+                #four
+                {
+                    top: 330px;
+                     background-image: url(../images/homeIco.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                   
+                    
+                }
+                #five
+                {
+                    top: 390px;
+                     background-image: url(../images/homeIco.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                   
+                    
+                }
+                #six
+                {
+                    top: 450px;
+                    background-image: url(../images/homeIco.png);
+                    background-position: right;
+                    background-repeat: no-repeat;
+                    
+                    
+                }
+                .nav a
+                {
+                    padding: 10px;
+                }
+.cont
+{
+    display: flex;
+    align-items: center;
+
+    height: 75vh;
+}
+.signIn
+{
+    margin: auto;
+    text-align: center;
+    box-shadow: 0.8px 0.8px 5px black;
+    padding-bottom: 20px;
+    width: 400px;
+    margin-top: 100px;
+    z-index: 3;
+    background: white;
+    
+    
+}
+.signIn h1
+{
+    padding: 30px;
+}
+input
+{
+    margin: 20px;
+    padding: 10px;
+    outline: 0px;
+    border: 0px;
+    font-size: 130%;
+      
+}
+.signIn input:focus
+{
+    border-bottom: 2px solid #0d47a1;
+   
+}
+.btn
+{
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+      background-image: url(http://www.fg-a.com/wallpapers/geo-shapes-black-1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    display: inline-block;
+    color: #e3f2fd;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 0.4px 0.4px 1px black;
+    
+}
+
+.btn:  active
+{
+    box-shadow: 0.1px 0.1px 0.5px black;
+}
+
+/*----------------------------After Login-----------------------*/
+
+.cards
+{
+    padding: 100px 80px 100px 80px;
+    margin-top: 100px;
+    display: inline-block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0.8px 0.8px 5px black;
+    
+    
+}
+.cards p
+{
+    margin: 10px;
+    text-align: left;
+    
+}
+.home
+{
+    display: none;
+}
+.questionButton
+{
+    padding: 20px;
+    border-radius: 1px;
+    background: black;
+    margin: 3px;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+.previousOverlay
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    
+    
+}
+.questionWrap
+{
+    z-index: 100;
+}
+.hiddenOverlay
+{
+    display: none;
+}
+.hint3
+{
+    position: absolute;
+    z-index: -1;
+}

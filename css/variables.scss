@@ -1,0 +1,44 @@
+//Colors
+$primary: black;
+$secondary: #27D2DB;
+$hover:#151515;
+$fill:white;
+$memberCoverColor: #333;
+$halfOpacityBlack: rgba(0,0,0,0.7);
+
+
+//Menu Icons
+
+$iconHeight: 45px;
+$iconWidth: 60px;
+
+
+//Z-Index
+
+$layer0:-1;
+$layer1:1;
+$layer2:2;
+$layer3:3;
+
+//Animation
+$bounceAnimationTime: 0.8s;
+
+$enterAnimationRight: bounceInRight;
+$enterAnimationUp: bounceInUp;
+$enterAnimationDown: bounceInDown;
+
+$exitAnimationRight: bounceOutRight;
+$exitAnimationUp: bounceOutUp;
+$exitAnimationDown: bounceOutDown;
+
+
+//Team Variables
+
+$memberWidth: 300px;
+$memberHeight: 500px;
+$viewButton: 40px;
+
+grid *
+{
+    box-sizing: border-box;
+}

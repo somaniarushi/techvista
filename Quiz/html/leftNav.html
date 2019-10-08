@@ -1,0 +1,21 @@
+
+
+                <div class="menus">
+                    <a href="#/"><div class="nav" id="one" ></div></a>
+                    <a href="#/quiz"><div class="nav" id="two" ></div></a>
+                    <a href="#/leaderboards"><div class="nav" id="three" ></div></a>
+                    <a href="#/guidelines"><div class="nav" id="four" ></div></a>
+                    <a href="#/settings"><div class="nav" id="five" ></div></a>
+                    <a href="#/logout"><div class="nav" id="six" ></div></a>
+                </div>
+            
+            <script>
+                $(".nav").on("mouseover", function(){
+                   $(this).animate({"margin-left":"200px"}, 200);
+                $(this).on("mouseleave", function(){
+                    $(this).animate({"margin-left":"5px"}, 200);
+                });
+                });
+            </script>
+
+        

@@ -1,0 +1,80 @@
+.menuGrid {
+  text-align: center; }
+
+.tileGrid {
+  margin: -10px 300px -10px 250px;
+  padding-top: 80px;
+  list-style: none;
+  text-align: left;
+  height: 100vh; }
+
+.tileGrid li {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  height: 300px;
+  width: 400px; }
+
+.tileGrid li figcaption {
+  background: #2c3f52 !important;
+  padding: 10px;
+  top: -500px !important; }
+
+.tileGrid figure {
+  padding: 0px; }
+
+/*
+#row2col3
+{
+    width: $oneCol*3 !important;
+    height: $oneRow *2 !important;
+}
+#row2col2
+{
+    width: $oneCol*2 !important;
+    height: $oneRow *2 !important;
+}
+
+#row1col2
+{
+    width: $oneCol !important;
+    height: $oneRow !important;
+}
+#row1col2
+{
+    width: $oneCol *2 !important;
+    height: $oneRow !important;
+}
+
+#row2col3 figcaption
+{
+    width: $oneCol*3 !important;
+    height: ($oneRow *2)/2 !important;
+}
+#row2col2 figcaption
+{
+    width: $oneCol*2 !important;
+    height: ($oneRow *2)/2 !important;
+}
+
+#row1col1 figcaption
+{
+    width: $oneCol !important;
+    height: $oneRow/2 !important;
+}
+#row1col2 figcaption
+{
+    width: $oneCol *2 !important;
+    height: $oneRow/2 !important;
+}
+*/
+@media screen and (max-width: 31.5em) {
+  .tileGrid {
+    padding: 10px 10px 100px 10px; }
+
+  .tileGrid li {
+    width: 100%;
+    min-width: 300px; } }
+
+/*# sourceMappingURL=homeStyle.css.map */

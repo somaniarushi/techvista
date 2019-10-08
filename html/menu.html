@@ -1,0 +1,38 @@
+<div class="menuWrapper">
+    
+        <div class="menu">
+        
+        <div class="menuIcons"  ng-repeat="menu in menuList" id='{{ menu.label }}' ng-click="clickIcon(menu.label)">
+            <ng-include class="icon" src="menu.ico"></ng-include><p class="menuLabel" ng-if="menu.label!='expand'">{{ menu.label }}</p>
+            
+        </div>
+        
+        
+        </div>
+     <div class="menu" id="quizMenu">
+        
+        <div class="menuIcons"  ng-repeat="menu in menuList" id='{{ menu.label }}' ng-click="clickIcon(menu.label)">
+            <ng-include class="icon" src="menu.ico"></ng-include><p class="menuLabel" ng-if="menu.label!='expand'">{{ menu.label }}</p>
+            
+        </div>
+        
+        
+        </div>
+        
+        
+        <div class="contentWrapper">
+         <div class="rightForMusic" ng-if="musicOrSearch">
+            <ng-include src="'../html/music.html'"></ng-include> 
+         </div>
+            <div class="htmlData">
+                <div class="animations">
+                    <div ng-if="showLoadingIndicator" ng-include="'../partials/animations/loading.html'"></div>
+                    <div ng-if="!showLoadingIndicator" class="html" data-ng-view></div>
+                </div>
+            </div>
+        </div>
+    
+
+</div>
+
+    

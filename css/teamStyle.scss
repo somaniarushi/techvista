@@ -1,0 +1,83 @@
+.teamWrapper
+{
+    margin-top: 100px;
+    text-align: center;
+   
+    
+   
+}
+.memberCont
+{
+    display: inline-block;
+    margin: 0px;
+   
+}
+.memberCont li
+{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.memberCont li figure
+{
+    width:300px;
+}
+.memberCont figure figcaption p
+{
+    color: $secondary;
+}
+.viewButton:hover
+{
+    
+    color: $secondary;
+    
+}
+.data
+{
+    text-align: left;
+}
+.memberData
+{
+    
+    text-align: left;
+    right: 0px;
+    top: 0px;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    
+    
+}
+.memberData.ng-enter
+{
+    animation: bounceInRight 0.8s ease-in;
+}
+.memberData.ng-leave
+{
+    animation: bounceOutRight 0.8s ease-out;
+}
+.memberData-right
+{
+    width: 600px;
+    float: right;
+    background: black;
+    height: 100vh;
+    padding: 70px;
+    line-height: 150%;
+    font-size: 110%;
+    text-align: left;
+    overflow: scroll;
+}
+.memberData-left
+{
+    background:rgba(0,0,0,0.9);
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}

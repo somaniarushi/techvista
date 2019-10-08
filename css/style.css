@@ -1,0 +1,930 @@
+.sucessMsg
+{
+    display: none;
+}
+.invalidPass
+{
+    display: none;
+}
+.cont.ng-enter
+{
+    animation: bounceInUp 0.5s ease-in;
+}
+#memberName
+{
+    line-height:40px;
+}
+body {
+  overflow: hidden;
+}
+a
+{
+    text-decoration: none;
+}
+.loaded .bg {
+  opacity: 1;
+}
+
+.bg {
+position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  will-change: opacity;
+  -webkit-transition: 1s opacity ease-out;
+  transition: 1s opacity ease-out;
+}
+.bg polygon {
+  opacity: 0;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.headingWrapper
+{
+    height: 100vh; 
+    position: absolute;
+    text-align: center;
+
+}
+.left
+{
+    transform: rotate(-180deg);
+    width: 100vw;
+    height: 100vh;
+    
+}
+.right
+{
+    float: right;
+    width: 100vw;
+    height: 100vh;
+    
+    
+}@font-face
+{
+    font-family: ea;
+    src: url(../font/EASPORTS15.ttf);
+}
+.techvista
+{
+    font-family: ea;
+    font-size: 500%;
+    font-weight: lighter;
+    position: absolute;
+    width: 100vw;
+    left: 12px;
+    color: rgba(255,255,255,1);;
+    top: 20%; 
+    padding: 50px 50px 0px 50px;
+    text-align: center;
+    z-index: 1;
+    
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+
+.logo img
+{
+    height: 400px;
+    position: absolute;
+    left: 23vw;
+    margin-left: -50%;
+    top: 20%; 
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    
+    
+}
+/*Loader */
+
+.techvistaHeading
+{
+    display: none;
+    font-family: ea;
+    font-style: italic;
+}
+.loaderSvg1{
+  display: inline-block;
+  width: 62px;
+  
+    margin-left: 50px;
+   
+    top: 26px;
+    display: none;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+.loaderSvg{
+  display: inline-block;
+  width: 62px;
+  
+    margin-left: 50px;
+    position: relative;
+    top: 26px;
+    display: none;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+.st0, .st1 {
+  fill: #f8d31f;
+  stroke: #f8d31f;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#outline-path {
+  fill: none;
+  stroke: #f8d31f;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+}
+
+
+
+.arrow,
+.arrow:before
+{
+  position: absolute;
+  left: 50%;
+    cursor: pointer;
+    z-index: 5;
+}
+.arrow
+{
+  width: 40px;
+  height: 40px;
+  bottom:100px;
+    left: 50vw;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(225deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+    
+}
+  
+.arrow:before
+{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow
+{
+    0%{opacity: 1;}
+    100%{opacity: 0;
+    transform: translate(5px, 5px);}
+}
+.firstView
+{
+    height:100vh;
+    width: 100vw; 
+   
+    
+    
+}
+
+.startScreen #tvLogo
+{
+    height: 300px;
+    position:absolute;
+    top: 15%;
+    left: 40%;
+}
+.startScreen #jpLogo
+{
+    height: 200px;
+    position:absolute;
+    top: 50%;
+    left: 55%;
+}
+.startScreen #lzLogo
+{
+    height: 200px;
+    position:absolute;
+    top: 50%;
+    left: 35%;
+    border-radius: 50%:
+}
+.fixedBottom
+{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+    height: 100px;
+    
+    z-index: 100;
+    text-align: right;
+    
+}
+
+.fixedBottom #jpLogo
+{
+    height: 100px;
+    position: relative;
+    top: -30px;
+    margin: 15px;
+    
+}
+.fixedBottom #lzLogo
+{
+    height: 100px;
+    position: relative;
+    top: -30px;
+    margin: 15px;
+    
+}
+.wrapper {
+  
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  
+}
+.bg-bubbles li {
+  position: absolute;
+  list-style: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+    z-index: 2;
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: -160px;
+  -webkit-animation: square 25s infinite;
+  animation: square 25s infinite;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+.bg-bubbles li:nth-child(1) {
+  left: 10%;
+}
+.bg-bubbles li:nth-child(2) {
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+}
+.bg-bubbles li:nth-child(3) {
+  left: 25%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.bg-bubbles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-duration: 22s;
+          animation-duration: 22s;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+}
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.bg-bubbles li:nth-child(7) {
+  left: 32%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.bg-bubbles li:nth-child(8) {
+  left: 55%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+}
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.bg-bubbles li:nth-child(10) {
+  left: 90%;
+  width: 160px;
+  height: 160px;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+@-webkit-keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+@keyframes square {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(600deg);
+            transform: translateY(-700px) rotate(600deg);
+  }
+}
+.secondView
+{
+    
+    width: 100vw; 
+    position: absolute;
+    top: 100vh;
+   background: -webkit-linear-gradient(top right, #18092b 0%, #6919ce 100%);
+    background: linear-gradient(to bottom left, #18092b 0%, #6919ce 100%);
+   
+    
+}
+.secondViewWrap
+{
+    margin: 300px 0vw 150px 0vw;
+}
+.menuTileWrapper
+{
+    
+    
+    display: inline-block;
+    
+}
+.tileWrapper
+{
+    
+    
+}
+.menuTiles
+{
+    padding: 25px 30px 25px 30px;
+    width: 40vw;
+    font-family: heading;
+    background:#180a2b;
+    color: black;
+    margin: 2px;
+    box-shadow: 0.8px 0.8px 0.8px black;
+    cursor: pointer;
+    z-index: 10000;
+    color: white;
+    text-align: left;
+    list-style-type: none;
+    transition: opacity 0.3s linear;
+        
+}
+
+.menuTiles:hover
+{
+    opacity: 0.5;
+    box-shadow: 2px 2px 2px black;
+}
+.about
+{
+    padding: 30px 50vw 120px 70px;
+    color: white;
+    background: #180a2b;
+    text-align: left;
+    font-family: heading;
+    
+    
+    margin-left: -60px;
+}
+#position
+{
+    width: 100px;
+}
+#name
+{
+    width: 250px;
+}
+#school
+{
+    width: 300px;
+}
+.updates
+{
+    padding: 70px;
+    display: inline-block;
+    background: #180a2b;
+    color: white;
+    float: right;
+    text-align: left;
+    width: 40vw;
+    margin-right: 150px;
+    
+}
+#c2
+{
+    width: 400px; 
+}
+.menu
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    display: none;
+}
+.notLoaded
+{
+    display: none;
+}
+.view
+{
+    margin-left: 60px;
+    
+}
+.mainLoad .spinner div
+{
+    background-color:black;
+}
+.popups p
+{
+    font-weight: bold;
+}
+.loaded
+{
+    display: inline-block;
+    animation: bounceInUp 1s linear;
+}
+.loading
+{
+    position: fixed;
+    top: 45vh;
+    left: 53vw;
+}
+
+.loaded.ng-leave
+{
+    animation: bounceOutUp 0.8s ease-out;
+}
+.view.ng-enter
+{
+    animation: bounceInUp 0.8s ease-out;
+}
+.footer
+{
+    width: 100vw;
+    
+    background: #180a2b;
+    position: fixed;
+    bottom: 0px;
+    z-index: 5;
+    text-align: left;
+    padding: 30px;
+    display: none;
+    color: white;
+    margin-left: -60px;
+    
+}
+#allEvents
+{
+    display: none;
+}
+.footerLeft
+{
+    float: left;
+    margin-top: 5px;
+}
+.footerRight
+{
+    margin-top: 5px;
+    float: right;
+    
+}
+.menuTileWrapper.ng-enter
+{
+    animation: fadeIn 0.3s linear;
+}
+.schedule
+{
+    height: 96vh;
+    margin: 2vh 0px 2vh 0px;
+}
+.updatesMobile
+{
+    display: none;
+    margin: 15px;
+}
+.eventImgMobile
+{
+    display: none;
+}
+#coordiantorPhone
+{
+    display: none;
+}
+#fbLink svg
+{
+    padding: 15px;
+    height: 70px;
+    width: 70px;
+}
+.techvistaHeadingPhone
+    {
+        display: none;
+    }
+#phoneMemberPic
+{
+    display: none;
+    
+}
+#phone-eventHeadingCont
+{
+    display: none;
+}
+.mobilequestionButtonWrap
+{
+    display: block;
+}
+.cont
+{
+    position: relative;
+    top: -30px;
+}
+@media only screen and (max-width: 500px)
+{
+   
+    
+    #event-leftPane
+    {
+        display: none;
+    }
+    .event-rules
+    {
+        padding: 5px;
+    }
+    .quizHeading
+    {
+        padding: 30px;
+    }
+    .quizRules
+    {
+        padding: 15px;
+        list-style-type: square;
+    }
+    #phoneMemberPic
+    {
+        width: 100%;
+    }
+    
+    .techvista
+    {
+        margin-left: 0px!important;
+    }
+    .loaderSvg
+    {
+        left: 0px!important;
+        top: -10px!important;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #eventCont
+    {
+        width: 33.33%;
+    }
+    .subHeading
+    {
+        display: none;
+    }
+   
+      #eventHeading
+    {
+        
+        position: relative;
+        left: 100px;
+    }
+    #event-rules
+    {
+        margin-left: 35vw;
+        height: 70%;
+        padding-bottom: 100px;
+    }
+    
+    #event-leftPane
+    {
+        width: 30vw;
+    }
+    
+}
+@media only screen and (max-width: 1050px){
+    
+    .mobilequestionButtonWrap
+    {
+        display: block;
+    }
+    .questionButtonWrap
+    {
+        display: none;
+    }
+    .fixedBottom
+    {
+        display: none;
+    }
+    .updates
+    {
+        display: none;
+        
+    }
+    
+.updatesMobile
+{
+    display: block;
+    
+}
+    
+    .about
+    {
+        padding:0px;
+        padding: 50px;
+        padding-bottom: 100px;
+    }
+    .menuTiles
+    {
+        width:80vw;
+    }
+        .secondViewWrap
+    {
+        margin-left: -10vw;
+        margin-right: 0px;
+        
+    }
+
+    .popMap
+    {
+        height: 50vh;
+    }
+    .about
+    {
+        padding:0px;
+        padding: 50px;
+        padding-bottom: 100px;
+    }
+
+    #eventCont
+    {
+        width: 33.33%;
+    }
+    .svgLoader
+    {
+        height: 50px;
+    }
+    
+    
+    
+   
+}
+@media only screen and (max-width: 900px)
+{
+   
+    #phone-eventHeadingCont
+    {
+        display: block;
+        height: 100px;
+    }
+    #eventHeadingCont
+    {
+        display: none;
+    }
+    #event-rules
+    {
+        margin: 0px;
+        width: 100%;
+        height: 48%;
+        padding: 40px 40px 40px 100px;
+    }
+     #eventHeading
+    {
+        font-size: 100%;
+        position: relative;
+        left: 0px;
+        padding-bottom: 5px;
+        height: 70px;
+    }
+    
+#event-leftPane
+    {
+        display: none;
+    }
+    #eventImgMobile
+    {
+        display: block;
+        width: 100vw;
+        margin-left: 60px;
+    }
+    #coordiantorPhone
+    {
+        display: block;
+    
+        
+    }
+    #coordinator p
+    {
+        margin: 5px;
+    }
+    
+    #coordinator p a
+    {
+        font-family: heading;
+        text-decoration: none;
+    }
+    #phoneMemberPic
+    {
+        display: block;
+        margin: auto;
+    }
+    .memberData-right
+    {
+        text-align: center;
+        display: block;
+        float: left;
+        width: 100%;
+        
+    }
+    .memberData-left
+    {
+        display: none;
+    }
+    .fixedBottom
+    {
+        display: none!important;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+   
+    #eventHeading
+    {
+        margin: 0px;
+        padding-top: 10px;
+        top: 12px;
+    }
+    #eventHeadingCont
+    {
+        padding: 0px;
+    }
+    .techvista
+    {
+        margin-left: 35px;
+    }
+    #techvistaHeading
+    {
+        display: none!important;
+    }
+    .techvistaHeadingPhone
+    {
+        display: inline-block;
+        font-size: 50%;
+        font-family: ea;
+    }
+    .loaderSvg
+    {
+        height:34px;
+        left: -30px;
+        top: 19px;
+    }
+    #eventHeading
+    {
+        font-size: 100%;
+        position: relative;
+        left: 0px;
+        padding-bottom: 5px;
+        height: 70px;
+    }
+    //Contact Page
+    .popups
+    {
+        font-family: heading;
+        font-size: 100%;
+    }
+    .popMap 
+    {
+        
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+    .popMap iframe 
+    {
+        
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+    #eventCont
+    {
+        width: 50%;
+    }
+    .teamWrapper
+    {
+    
+    text-align: center;
+    width: 100%;
+    
+   
+    }
+    
+    .memberData-right
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #questionWrap
+    {
+        width: 100%;
+    }
+    .guideText
+    {
+     padding: 0px;   
+    }
+    .homeTextWrapper
+    {
+        margin: 0px;
+    }
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
