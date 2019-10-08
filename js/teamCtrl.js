@@ -10,19 +10,19 @@ app.controller("teamCtrl", function($scope, $location, $http)
             {
               "name":"Arushi Somani",
               "post":"President",
-              "pic":"../images/team/Arushi Profile.jpg",
+              "pic":"images/team/Arushi Profile.jpg",
               "data": "Error 404. "    
           },
            {
               "name":"Kushagra Goyal",
               "post":"Director of Communication",
-              "pic":"../images/team/Kushagra Profile.jpg",
+              "pic":"images/team/Kushagra Profile.jpg",
               "data": "Kushagra is a twelfth grader pursuing science with computer applications and regrets. A Queen fan, you can often see him break out into Bohemian Rhapsody at a moment's notice. However, his one true love remains 90's Hindi music, which he constantly obsesses over. Having achieved a doctorate in handling people, anyone talking to him immediately feels the warmth in him. A hard worker at heart, you will probably see him running around throughout the day (because class ain't good enough). Find him, if you can, for we certainly can't."
           },
            {
               "name":"Anusha Chitranshi",
               "post":"Coordinator: Hamsterjam",
-              "pic":"../images/team/Anusha Profile.jpg",
+              "pic":"images/team/Anusha Profile.jpg",
                "data":"A gem of a person, Anusha is a twelfth grader pursuing the science stream with computers, a choice she regrets everyday. Known for her mega-watt smile, she loves music, dancing, painting, puzzles and sleeping (not in that order). An avid writer and reader, anyone dumb enough to go against her in a battle of wits would be crushed immediately. She hopes to make the jamming session a memorable experience for all the participants!"
 
            },
