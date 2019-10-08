@@ -1,0 +1,23 @@
+<ng-include ng-if="showLoader" src="'../partials/animations/loading.html'"></ng-include>
+
+<div class="cont quizHome" ng-if="!showLoader">
+    <div class="quizHomeHeading">
+        <div class="imgWrap" style="background:url('{{ pic }}');background-size:cover;background-repeat:no-repeat;">
+        <ng-include class="dpLoader" ng-if="showdpLoader" src="'../partials/animations/loadingQuiz.html'"></ng-include>
+        </div>
+
+    </div>
+    <div class="homeTextWrapper" id="homeTextWrapper">
+        <div class="darkHeader" id="darkHeaderHome"></div>
+        <div class="homeText">
+            <br>
+            <br>
+            <div class="shortData">
+               <h1>{{ displayName }}</h1>
+                <h3>Welcome to ITQuest , an online treasure hunt organised as a part of TechVista'18.</h3>
+				 Use the navigation buttons on your left to visit different sections of the website.
+        		 Also, Do not forget to change your password if you haven't already as the auto-generated passwords expire within 24 hours.
+            </div>
+        </div>
+    </div>
+</div>

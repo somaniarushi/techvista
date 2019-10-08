@@ -1,0 +1,38 @@
+<div class="alertCont" ng-if='alert!=""' style="background-color:{{ errorColor }}">
+    
+        {{ alert }}
+    
+</div>            
+
+<div class="cont">
+    <div  class="cards home">
+        <h2>Create Users</h2>
+        <br>
+        <br>
+        <div class="group">      
+          <input type="text" required ng-model="email">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+        <br>
+        <br>
+        <div class="group">      
+          <input type="text" required ng-model="username">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+         <div class="group">      
+          <input type="text" required ng-model="type">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Type</label>
+        </div>
+        
+        <div class="btn" ng-click="create()" ng-if="!loginLoader">Submit</div>
+        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="loginLoader"></ng-include>
+    </div>
+    
+</div>
+        

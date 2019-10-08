@@ -1,0 +1,38 @@
+<ng-include ng-if="showLoader" src="'../partials/animations/loading.html'"></ng-include>
+<div class="cont" ng-if="!showLoader">
+<div data-ng-include="'../html/leftNav.html'"></div>
+    <div class="cards" style="text-align:left">
+        
+       
+       <table style="width:100%">
+           <tr id="listHead">
+           
+                
+                <td id="name">Name</td>
+                <td id="school">School</td>
+                <td id="position">Question No</td>
+               
+           </tr>
+           <tr></tr>
+        
+        <table ng-repeat="i in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,28,29,30,31,32,33,34,35,36,37,38,39,40] | orderBy:'-'" >
+  <tr id="list" ng-repeat="user in leaderBoardArray | orderBy:'time'" ng-if="user.questionNumber==i" >
+    
+    
+    
+    <td id="name">{{ user.Name }}</td>
+    <td id="school">{{ user.parent }}</td>
+    <td id="position">{{ user.questionNumber }}</td>		
+    
+  </tr>
+           </table>
+  </table>
+
+        
+        </div>
+        
+        
+        
+    </div>
+
+    

@@ -1,0 +1,67 @@
+<div class="quizWrapper">
+    <div class="alertCont" ng-if='alert!=""' style="background-color:{{ errorColor }}">
+    
+        {{ alert }}
+    
+    </div>
+  <div class="quizHeading"><h1>Treasure I.T.</h1></div>
+       <div class="cont loginCont">
+        <div  class="signIn">
+    <div class="group">      
+      <input type="text" required ng-model="username">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email</label>
+    </div>
+            <br>
+            <br>
+            
+    <div class="group">      
+      <input type="password" required ng-model="password">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Password</label>
+    </div>
+       
+      <br><br>
+        <div class="btn" ng-click="submit()" ng-if="!loginLoader">Sign In</div>
+        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="loginLoader"></ng-include>
+        <br>
+        <div class="btn" ng-click="openPasswordResetWindow()" ng-if="!loginLoader">Forgot Password?</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+    </div>
+    <ul class="quizContentWrap">
+        <li>The login credentials for the teachers' portal will be mailed to the registered teacher's email id after the participation has been confirmed.</li>
+        <li>The teachers will be able to create the accounts for the students  participating in the event.</li>
+        <li>The participating students will the receive their login details and will be able to participate in the quiz.</li>
+        <li>For more updates, stay tuned to our <strong><a href="https://www.facebook.com/TechVista16/">Facebook</a></strong> page</li><br>
+        <li>Also, consider your Enter key non-functional #clicksubmit.</li>
+        <li>The following schools have been sent the login details on the given email IDs
+        <ul><li ng-repeat="school in listOfSchools">{{ school.name }} : {{ school.email }}</li></ul>
+        </li>
+        
+    </ul>
+    
+ 
+    
+</div>            
+<div id="passwordResetCont" >
+    <div class="closeBtn" ng-click="closeforgotpass()"></div>
+    <div class="passwordReset signIn" >
+            <div class="group">      
+              <input type="text" required ng-model="emailid">
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email</label>
+            </div>
+        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="forgotLoader"></ng-include>
+        <br>
+            <div class="btn" ng-click="passReset()" ng-if="!forgotLoader">Send Reset Email</div>
+    </div>
+</div>
+
+        

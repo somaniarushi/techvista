@@ -1,0 +1,67 @@
+<ng-include ng-if="showLoader" src="'../partials/animations/loading.html'"></ng-include>
+<div class="cont home">
+<div class="alertCont" ng-if='wrongMsg!=""' style="background-color:{{ errorColor }}">
+        {{ wrongMsg }}    
+</div>
+
+
+    <div class="previousOverlay hiddenOverlay">
+        
+    <div class="questionWrap cards" id="questionWrap">
+    
+        
+    <div class="question hiddenOverlay"  ng-repeat="question in questionArray | orderBy:'$id'" ng-class="question.$id">
+        
+        <p class="question"><strong>Q{{ question.$id }}&emsp;</strong>{{ question.Q }}</p>
+        <br>
+        <img ng-src="{{ question.pic }}">
+        <br>
+        <br><br>
+        <div class="group">      
+          <input type="text" required ng-model="randomPrevAns">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Answer</label>
+        </div>
+        <br/>
+        <div class="btn" ng-click="submitAnsButNoUpdate(question.A, randomPrevAns, question.$id)">Submit</div>
+        <div class="btn close"  ng-click="hide(question.$id)"></div>
+        <br>
+        
+        
+        </div>
+    </div>
+        </div>
+    <div class="hint3">{{ hint3 }}</div>
+    <div class="cards" id="questionWrap">
+    
+        <h3 class="question" style="text-align:center;"><strong>Q{{ questionNo }}&emsp;</strong>{{ currentQuestion }}</h3>
+        <br>
+       <img ng-src="{{ questionPic }}">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="group">      
+          <input type="text" required id="ans">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Answer</label>
+        </div>
+        <div class="btn" ng-click="submitAns()">Submit</div>
+        <br>
+        <div class="mobilequestionButtonWrap">
+    
+    
+        
+        <div class="questionButton" ng-repeat="question in questionArray | orderBy:'-$id'" ng-click="questionSelect(question)">{{ question.$id }}</div>
+         
+    
+    
+        </div>
+            
+        
+    </div>
+
+    </div>
+    
