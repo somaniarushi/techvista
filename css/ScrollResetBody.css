@@ -13,10 +13,10 @@
 
 @font-face {
   font-family: data;
-  src: url(../font/Quicksand.otf); }
+  src: url(font/Quicksand.otf); }
 @font-face {
   font-family: heading;
-  src: url(../font/Raleway-Thin.ttf); }
+  src: url(font/Raleway-Thin.ttf); }
 * {
   padding: 0px;
   margin: 0px;

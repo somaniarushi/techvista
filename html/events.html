@@ -1,5 +1,5 @@
 
-<div ng-if="!showEvents" class="loading" ng-include="'../partials/animations/loading.html'"></div>
+<div ng-if="!showEvents" class="loading" ng-include="'partials/animations/loading.html'"></div>
 
 <ul class="grid cs-style-4" ng-if="showEvents">
     <li class="eventCont" id="eventCont" ng-repeat="event in events">
@@ -11,7 +11,7 @@
                     <p class="heading">{{ event.realEventName }}</p>
                 </div>
                 <div class="openBtn" ng-click="triggerEventDetails(event)">
-                    <ng-include src="'../partials/arrow.html'"></ng-include>
+                    <ng-include src="'partials/arrow.html'"></ng-include>
                 </div>
             </figcaption>
         </figure>
@@ -34,8 +34,8 @@
         
             <p>Phone : +91 {{ currentEvent.contact.phone }}</p>
             <p>Email : {{ currentEvent.contact.mail }}</p>
-             <a  href="{{ currentEvent.contact.fb }}"><ng-include src="'../partials/buttons/fbIco.html'" id="fbLink"></ng-include></a>
-            <a  href="mailto:{{ currentEvent.contact.mail }}"><ng-include src="'../partials/buttons/gmailIco.html'" id="fbLink"></ng-include></a>
+             <a  href="{{ currentEvent.contact.fb }}"><ng-include src="'partials/buttons/fbIco.html'" id="fbLink"></ng-include></a>
+            <a  href="mailto:{{ currentEvent.contact.mail }}"><ng-include src="'partials/buttons/gmailIco.html'" id="fbLink"></ng-include></a>
              </div>
             <div class="phone-event-rules" id="phone-event-rules">
         
@@ -61,8 +61,8 @@
         
             <p>Phone :<br> +91 {{ currentEvent.contact.phone }}</p>
             <p>Email :<br> {{ currentEvent.contact.mail }}</p>
-            <a  href="{{ currentEvent.contact.fb }}"><ng-include src="'../partials/buttons/fbIco.html'" id="fbLink"></ng-include></a>
-            <a href="mailto:{{ currentEvent.contact.mail }}"><ng-include src="'../partials/buttons/gmailIco.html'" id="fbLink"></ng-include></a>
+            <a  href="{{ currentEvent.contact.fb }}"><ng-include src="'partials/buttons/fbIco.html'" id="fbLink"></ng-include></a>
+            <a href="mailto:{{ currentEvent.contact.mail }}"><ng-include src="'partials/buttons/gmailIco.html'" id="fbLink"></ng-include></a>
         
         </div>
     </div>

@@ -1,7 +1,7 @@
 
 @font-face {
     
-    src: url(../font/SansationLight.woff);
+    src: url(font/SansationLight.woff);
     font-family: sansation;
 }
 
@@ -37,7 +37,7 @@ header
                 {
                     
                     top: 150px;
-                    background-image: url(../images/homeIco.png);
+                    background-image: url(images/homeIco.png);
                     background-position: right;
                     background-repeat: no-repeat;
                     
@@ -46,7 +46,7 @@ header
                 #two
                 {
                     top: 210px;
-                     background-image: url(../images/homeIco.png);
+                     background-image: url(images/homeIco.png);
                     background-position: right;
                     background-repeat: no-repeat;
                    
@@ -55,7 +55,7 @@ header
                 #three
                 {
                     top: 270px;
-                     background-image: url(../images/homeIco.png);
+                     background-image: url(images/homeIco.png);
                     background-position: right;
                     background-repeat: no-repeat;
                    
@@ -65,7 +65,7 @@ header
                 #four
                 {
                     top: 330px;
-                     background-image: url(../images/homeIco.png);
+                     background-image: url(images/homeIco.png);
                     background-position: right;
                     background-repeat: no-repeat;
                    
@@ -74,7 +74,7 @@ header
                 #five
                 {
                     top: 390px;
-                     background-image: url(../images/homeIco.png);
+                     background-image: url(images/homeIco.png);
                     background-position: right;
                     background-repeat: no-repeat;
                    
@@ -83,7 +83,7 @@ header
                 #six
                 {
                     top: 450px;
-                    background-image: url(../images/homeIco.png);
+                    background-image: url(images/homeIco.png);
                     background-position: right;
                     background-repeat: no-repeat;
                     

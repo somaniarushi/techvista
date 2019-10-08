@@ -1,9 +1,9 @@
-<ng-include ng-if="showLoader" src="'../partials/animations/loading.html'"></ng-include>
+<ng-include ng-if="showLoader" src="'partials/animations/loading.html'"></ng-include>
 
 <div class="cont quizHome" ng-if="!showLoader">
     <div class="quizHomeHeading">
         <div class="imgWrap" style="background:url('{{ pic }}');background-size:cover;background-repeat:no-repeat;">
-        <ng-include class="dpLoader" ng-if="showdpLoader" src="'../partials/animations/loadingQuiz.html'"></ng-include>
+        <ng-include class="dpLoader" ng-if="showdpLoader" src="'partials/animations/loadingQuiz.html'"></ng-include>
         </div>
 
     </div>

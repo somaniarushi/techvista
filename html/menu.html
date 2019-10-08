@@ -22,11 +22,11 @@
         
         <div class="contentWrapper">
          <div class="rightForMusic" ng-if="musicOrSearch">
-            <ng-include src="'../html/music.html'"></ng-include> 
+            <ng-include src="'html/music.html'"></ng-include> 
          </div>
             <div class="htmlData">
                 <div class="animations">
-                    <div ng-if="showLoadingIndicator" ng-include="'../partials/animations/loading.html'"></div>
+                    <div ng-if="showLoadingIndicator" ng-include="'partials/animations/loading.html'"></div>
                     <div ng-if="!showLoadingIndicator" class="html" data-ng-view></div>
                 </div>
             </div>
