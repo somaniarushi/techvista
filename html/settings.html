@@ -1,4 +1,4 @@
-<ng-include ng-if="showLoader" src="'../partials/animations/loading.html'"></ng-include>
+<ng-include ng-if="showLoader" src="'partials/animations/loading.html'"></ng-include>
 
 <div class="cont quizHome home" >
      <div class="alertCont" ng-if='alert!=""' style="background-color:{{ errorColor }}">
@@ -60,7 +60,7 @@
         </div>
        
         <div class="btn" ng-click="changePass()" ng-if="changePass">Update</div>
-        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="!changePass"></ng-include>
+        <ng-include class="quizLoader" src="'partials/animations/loadingQuiz.html'" ng-if="!changePass"></ng-include>
         </div>
     </div> 
     </div>

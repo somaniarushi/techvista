@@ -25,7 +25,7 @@
        
       <br><br>
         <div class="btn" ng-click="submit()" ng-if="!loginLoader">Sign In</div>
-        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="loginLoader"></ng-include>
+        <ng-include class="quizLoader" src="'partials/animations/loadingQuiz.html'" ng-if="loginLoader"></ng-include>
         <br>
         <div class="btn" ng-click="openPasswordResetWindow()" ng-if="!loginLoader">Forgot Password?</div>
         <br>
@@ -58,7 +58,7 @@
               <span class="bar"></span>
               <label>Email</label>
             </div>
-        <ng-include class="quizLoader" src="'../partials/animations/loadingQuiz.html'" ng-if="forgotLoader"></ng-include>
+        <ng-include class="quizLoader" src="'partials/animations/loadingQuiz.html'" ng-if="forgotLoader"></ng-include>
         <br>
             <div class="btn" ng-click="passReset()" ng-if="!forgotLoader">Send Reset Email</div>
     </div>

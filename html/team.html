@@ -21,7 +21,7 @@
     </div>	
 
 <div id="grid" class="grid cs-style-3 teamWrapper">
-    <div ng-include="'../partials/animations/loading.html'" ng-if="!show"></div>
+    <div ng-include="'partials/animations/loading.html'" ng-if="!show"></div>
     
     <div class="memberCont" ng-repeat-start="member in members" ng-if="show">
                 <li>
@@ -36,7 +36,7 @@
 							<p ng-bind-html="member.post"></p>
 						</figcaption>
                         <div class="openBtn">
-                            <ng-include src="'../partials/arrow.html'" ng-click="showData(member)"></ng-include>
+                            <ng-include src="'partials/arrow.html'" ng-click="showData(member)"></ng-include>
                         </div>
 					</figure>
 				</li>

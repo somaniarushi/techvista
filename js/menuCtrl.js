@@ -18,34 +18,34 @@ app.controller("menuCtrl", function($scope, $http, $location, $rootScope){
         {
             "label":"Events",
             "link":"Events",
-            "pic": "../images/tileMenuLogo/2.png",
+            "pic": "images/tileMenuLogo/2.png",
             "sizeId":"row2col3"
             
         },
         {
             "label":"Team",
             "link":"Team",
-            "pic": "../images/tileMenuLogo/3.png",
+            "pic": "images/tileMenuLogo/3.png",
             "sizeId":"row2col2"
             
         }, 
         {
             "label":"Schedule",
             "link":"Schedule",
-            "pic": "../images/tileMenuLogo/6.png",
+            "pic": "images/tileMenuLogo/6.png",
             "sizeId":"row1col2"
             
         },
         {
             "label":"Contact",
             "link":"Contact",
-            "pic": "../images/tileMenuLogo/4.png",
+            "pic": "images/tileMenuLogo/4.png",
             "sizeId":"row1col1"
         },
         {
             "label":"Treasure I.T. : Online Quiz",
             "link":"TreasureIT",
-            "pic": "../images/tileMenuLogo/4.png",
+            "pic": "images/tileMenuLogo/4.png",
             "sizeId":"row1col1"
         }
     ];
@@ -73,71 +73,71 @@ app.controller("menuCtrl", function($scope, $http, $location, $rootScope){
     var menuList = [
         {
             "label":"",
-            "ico": "../partials/buttons/homeIco.html",
+            "ico": "partials/buttons/homeIco.html",
             
         },
         {
             "label":"Events",
-            "ico": "../partials/buttons/eventIco.html"
+            "ico": "partials/buttons/eventIco.html"
             
         },
         {
             "label":"Team",
-            "ico": "../partials/buttons/teamIco.html"
+            "ico": "partials/buttons/teamIco.html"
             
         }, 
         
         {
             "label":"Schedule",
-            "ico": "../partials/buttons/scheduleIco.html"
+            "ico": "partials/buttons/scheduleIco.html"
             
         },
          {
             "label":"Contact",
-            "ico": "../partials/buttons/contactIco.html"
+            "ico": "partials/buttons/contactIco.html"
             
         },
           {
             "label":"TreasureIT",
-            "ico": "../partials/buttons/quizIco.html",
+            "ico": "partials/buttons/quizIco.html",
             
         }
     ];
      var treasureITMenuList = [
         {
             "label":"",
-            "ico": "../partials/buttons/homeIco.html",
+            "ico": "partials/buttons/homeIco.html",
             
         },
         {
             "label":"Events",
-            "ico": "../partials/buttons/eventIco.html"
+            "ico": "partials/buttons/eventIco.html"
             
         },
         {
             "label":"Team",
-            "ico": "../partials/buttons/teamIco.html"
+            "ico": "partials/buttons/teamIco.html"
             
         }, 
         
         {
             "label":"Schedule",
-            "ico": "../partials/buttons/scheduleIco.html"
+            "ico": "partials/buttons/scheduleIco.html"
             
         },
          {
             "label":"Contact",
-            "ico": "../partials/buttons/contactIco.html"
+            "ico": "partials/buttons/contactIco.html"
             
         },
           {
             "label":"TreasureIT",
-            "ico": "../partials/buttons/quizIco.html",
+            "ico": "partials/buttons/quizIco.html",
             
         },
           {
             "label":"Leaderboard",
-            "ico": "../partials/buttons/leaderboardIco.html"
+            "ico": "partials/buttons/leaderboardIco.html"
             
         },
     ];
@@ -146,49 +146,49 @@ app.controller("menuCtrl", function($scope, $http, $location, $rootScope){
     var quizCreateMenuList = [
          {
             "label":"Createuser",
-            "ico": "../partials/buttons/profileIco.html"
+            "ico": "partials/buttons/profileIco.html"
             
         },
          {
             "label":"Setting",
-            "ico": "../partials/buttons/settingIco.html"
+            "ico": "partials/buttons/settingIco.html"
             
         },
         {
             "label":"Logout",
-            "ico": "../partials/buttons/logoutIco.html"
+            "ico": "partials/buttons/logoutIco.html"
             
         }
     ];
     var quizMenuList = [
          {
             "label":"Profile",
-            "ico": "../partials/buttons/profileIco.html"
+            "ico": "partials/buttons/profileIco.html"
             
         },
         {
             "label":"Questions",
-            "ico": "../partials/buttons/questionIco.html",
+            "ico": "partials/buttons/questionIco.html",
             
         },
         {
             "label":"Leaderboard",
-            "ico": "../partials/buttons/leaderboardIco.html"
+            "ico": "partials/buttons/leaderboardIco.html"
             
         },
         {
             "label":"Guidelines",
-            "ico": "../partials/buttons/guideIco.html"
+            "ico": "partials/buttons/guideIco.html"
             
         },
         {
             "label":"Settings",
-            "ico": "../partials/buttons/settingIco.html"
+            "ico": "partials/buttons/settingIco.html"
             
         },
          {
             "label":"Logout",
-            "ico": "../partials/buttons/logoutIco.html"
+            "ico": "partials/buttons/logoutIco.html"
             
         }
     ];

@@ -5,21 +5,21 @@ app.controller("eventCtrl", function($scope, $location, $http)
     $scope.showEvents=true;
     
 var eventPics = [
-        "../images/events/CodeALine.jpg",
-        "../images/events/BrainBug.jpg",
-        "../images/events/WeavingWeb.jpg",
-        "../images/events/StormTheFront.jpg",
-        "../images/events/Timeline.jpg",
-        "../images/events/RiddlersQuest.jpg",
-        "../images/events/TakeITEasy.jpg",
-        "../images/events/ReasonTreason.jpg",
-        "../images/events/FedoraTheExplorer.jpg",
-        "../images/events/Crossword.jpg",
-        "../images/events/Ham-ster-Dam.jpg",
-        "../images/events/TheJanusArgument.jpg",
-        "../images/events/WeGotItCovered.jpg",
-        "../images/events/AdAddnAddy.jpg",
-        "../images/events/Trademark.jpg"
+        "images/events/CodeALine.jpg",
+        "images/events/BrainBug.jpg",
+        "images/events/WeavingWeb.jpg",
+        "images/events/StormTheFront.jpg",
+        "images/events/Timeline.jpg",
+        "images/events/RiddlersQuest.jpg",
+        "images/events/TakeITEasy.jpg",
+        "images/events/ReasonTreason.jpg",
+        "images/events/FedoraTheExplorer.jpg",
+        "images/events/Crossword.jpg",
+        "images/events/Ham-ster-Dam.jpg",
+        "images/events/TheJanusArgument.jpg",
+        "images/events/WeGotItCovered.jpg",
+        "images/events/AdAddnAddy.jpg",
+        "images/events/Trademark.jpg"
         
         
     ];
@@ -30,7 +30,7 @@ var eventPics = [
         $scope.showEvents=true;
         
     }
-    image.src = "../images/events/Trademark.jpg"; 
+    image.src = "images/events/Trademark.jpg"; 
     
 
       $scope.showEventDetails=false;
@@ -39,7 +39,7 @@ var eventPics = [
               "eventName":"CodeX",
               "realEventName":"Programming",
               "head":"Anand Gupta",
-              "img":"../images/events/CodeALine.jpg",
+              "img":"images/events/CodeALine.jpg",
               "contact":{
                       "phone":"8957757878",
                       "mail":"prakash.anand0403@gmail.com",
@@ -63,7 +63,7 @@ var eventPics = [
               "eventName":"BrainBug",
               "realEventName":"Debugging",
               "head":"Mohitaksh Srivastava",
-              "img":"../images/events/BrainBug.jpg",
+              "img":"images/events/BrainBug.jpg",
               "contact":{
                       "phone":"9721451235",
                       "mail":"mohitech26@gmail.com",
@@ -89,7 +89,7 @@ var eventPics = [
               "eventName":"Weave-a-Web",
               "realEventName":"Web Designing",
               "head":"Kushal Khare",
-              "img":"../images/events/WeavingWeb.jpg",
+              "img":"images/events/WeavingWeb.jpg",
               "contact":{
                       "phone":"9005232661",
                       "mail":"gaurangkhare123@gmail.com",
@@ -112,7 +112,7 @@ var eventPics = [
               "eventName":"GameCon",
               "realEventName":"Gaming",
               "head":"Akshansh Singh",
-              "img":"../images/events/StormTheFront.jpg",
+              "img":"images/events/StormTheFront.jpg",
               "contact":{
                       "phone":"8052789627",
                       "mail":"ritikgupta4@gmail.com",
@@ -134,7 +134,7 @@ var eventPics = [
               "eventName":"Timeline",
               "realEventName":"Video Editing",
               "head":"Shikhar Vaish",
-              "img":"../images/events/Timeline.jpg",
+              "img":"images/events/Timeline.jpg",
              "contact":{
                       "phone":"8127730749",
                       "mail":"shikhar.vaish90@gmail.com",
@@ -155,7 +155,7 @@ var eventPics = [
               "eventName":"Riddler’s Quest",
               "realEventName":"Treasure Hunt",
               "head":"Veer Singh",
-              "img":"../images/events/RiddlersQuest.jpg",
+              "img":"images/events/RiddlersQuest.jpg",
               "contact":{
                       "phone":"8009709463",
                       "mail":"veer.vs19@gmail.com",
@@ -178,7 +178,7 @@ var eventPics = [
               "eventName":"BITSkrieg",
               "realEventName":"Quiz",
               "head":"Madhav Agrawal",
-              "img":"../images/events/TakeITEasy.jpg",
+              "img":"images/events/TakeITEasy.jpg",
               "contact":
                   {
                       "phone":"9839017601",
@@ -205,7 +205,7 @@ var eventPics = [
               "eventName":"Reason Treason",
               "realEventName":"Reasoning",
               "head":"Ritik Gupta",
-              "img":"../images/events/ReasonTreason.jpg",
+              "img":"images/events/ReasonTreason.jpg",
              "contact":{
                       "phone":"8052789627",
                       "mail":"ritikgupta4@gmail.com",
@@ -232,7 +232,7 @@ var eventPics = [
                       "email":"sudhanshu.harsh@gmail.com",
                       "fb":"https://www.messenger.com/t/DjSudy"
                },
-              "img":"../images/events/FedoraTheExplorer.jpg",
+              "img":"images/events/FedoraTheExplorer.jpg",
               "data":[
                   "Each school will be represented by a team of <strong>two</strong> participants.",
                   "The application/software to be used will be disclosed on the spot.",
@@ -249,7 +249,7 @@ var eventPics = [
               "eventName":"Maze Runner",
               "realEventName":"Crossword",
               "head":"Pratul Chaturvedi",
-              "img":"../images/events/Crossword.jpg",
+              "img":"images/events/Crossword.jpg",
                "contact":
                   {
                       "phone":"9839188217",
@@ -280,7 +280,7 @@ var eventPics = [
                       "mail":"anusha.chitranshi@gmail.com",
                       "fb":"https://www.messenger.com/t/anusha.chitranshi",
                 },
-              "img":"../images/events/Ham-ster-Dam.jpg",
+              "img":"images/events/Ham-ster-Dam.jpg",
               "data":[
                   "Number of participants: 1<br>Round 1 HAM (30 seconds) <br>Round 2 JAM (60 seconds)",
                   "Participants will be asked to speak on a given topic for the given time period.",
@@ -303,7 +303,7 @@ var eventPics = [
                       "fb":"https://www.messenger.com/t/Shady.SB"
                },
               
-              "img":"../images/events/TheJanusArgument.jpg",
+              "img":"images/events/TheJanusArgument.jpg",
               "data":[
                   "Each school will be represented by <strong>one</strong> participant",
                   "The topic will be disclosed at the venue. Paricipants will have <strong>40 minutes</strong> of preparation time",
@@ -325,7 +325,7 @@ var eventPics = [
                       "mail":"bhavya.batra07@gmail.com",
                       "fb":"https://www.messenger.com/t/bhavya.batra07",
               },
-              "img":"../images/events/WeGotItCovered.jpg",
+              "img":"images/events/WeGotItCovered.jpg",
               "data":[
                   "Each school will be represented by <strong>one</strong> participant.",
                   "The theme will be given on the spot.",
@@ -346,7 +346,7 @@ var eventPics = [
                       "mail":"bhavya.batra07@gmail.com",
                       "fb":"https://www.messenger.com/t/bhavya.batra07",
               },
-              "img":"../images/events/AdAddnAddy.jpg",
+              "img":"images/events/AdAddnAddy.jpg",
               "data":[
                   "Each school will be represented by a team of <strong>two</strong> participants.",
                   "The participants will be provided with a product for which they’ll have to create an advertisement (in the form of a brochure/pamphlet etc.).",
@@ -368,7 +368,7 @@ var eventPics = [
                       "mail":"harshilal15@gmail.com",
                       "fb":"https://www.messenger.com/t/harshi.lal",
               },
-              "img":"../images/events/Trademark.jpg",
+              "img":"images/events/Trademark.jpg",
               "data":[
                   "Each school will be represented by <strong>one</strong> participant.",
                   "At the start of the event, participants will be provided with the name and a short description of a production company/ organisation (which may or may not be fictional) and they'll be required to design a logo for the same",
@@ -382,7 +382,7 @@ var eventPics = [
           {
               "eventName":"Treasure I.T.",
               "realEventName":"Online Event",
-              "img":"../images/events/StormTheFront.jpg",
+              "img":"images/events/StormTheFront.jpg",
               "data":[
                   "This is an open online event",
                   "This event will start on <strong>13th of August, 2016</strong> and will continue for a week.",
